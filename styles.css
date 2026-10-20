@@ -14,3 +14,10 @@
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
   margin-bottom: 20px;
 }
+.project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 16px 0;
+}
