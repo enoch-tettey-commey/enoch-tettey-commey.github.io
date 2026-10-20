@@ -21,16 +21,17 @@
   border-radius: 8px;
   margin: 16px 0;
 }
-.sales-dashboard-image {
-  display: block;
-  width: 100%;
-  height: 240px;
-  object-fit: contain;
-  background: #f1f5f9;
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
+img.sales-dashboard-image {
+  display: block !important;
+  width: 100% !important;
+  height: 240px !important;
+  max-width: 100% !important;
+  object-fit: contain !important;
+  box-sizing: border-box !important;
   padding: 8px;
   margin: 16px 0;
-  box-sizing: border-box;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: #f1f5f9;
 }
 
