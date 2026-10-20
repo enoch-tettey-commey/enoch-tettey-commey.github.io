@@ -40,4 +40,21 @@ img.sales-dashboard-image {
   border-radius: 10px;
   background: #f1f5f9;
 }
+/* Keep all three project cards in equal desktop columns */
+@media (min-width: 901px) {
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  .project-card {
+    grid-column: auto;
+    min-width: 0;
+  }
+
+  .project-card:last-child {
+    grid-column: auto;
+  }
+}
 
