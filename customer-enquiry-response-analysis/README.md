@@ -105,6 +105,17 @@ The dataset contains 30 records and these fields:
 The notebook includes: 1. Average response time by communication
 channel. 2. Average response time by enquiry category. 3. Response time
 versus customer rating.
+### 1. Average Response Time by Channel
+
+![Average Response Time by Channel](response-time-by-channel.png)
+
+### 2. Average Response Time by Category
+
+![Average Response Time by Category](response-time-by-category.png)
+
+### 3. Response Time vs Customer Rating
+
+![Response Time vs Customer Rating](response-time-vs-rating.png)
 
 ## Recommendations
 
