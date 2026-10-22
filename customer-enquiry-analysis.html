@@ -1,0 +1,143 @@
+customer-enquiry-analysis.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customer Enquiry Response Analysis | Commey Enoch Tettey</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.7;
+      color: #263238;
+      background: #f5f7fa;
+    }
+    header {
+      background: #17324d;
+      color: white;
+      padding: 32px 20px;
+      text-align: center;
+    }
+    header h1 { margin-bottom: 8px; }
+    header p { margin: 0; }
+    main {
+      max-width: 950px;
+      margin: 30px auto;
+      padding: 0 18px;
+    }
+    section {
+      background: white;
+      padding: 24px;
+      margin-bottom: 22px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    h2 { color: #17324d; }
+    .kpis {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 14px;
+    }
+    .kpi {
+      background: #edf3f8;
+      padding: 18px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .kpi strong {
+      display: block;
+      font-size: 1.8rem;
+      color: #17324d;
+    }
+    .chart {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 14px 0 24px;
+      border: 1px solid #e2e7ec;
+      border-radius: 6px;
+    }
+    a { color: #075e9e; }
+    .links a {
+      display: inline-block;
+      margin: 6px 12px 6px 0;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 24px;
+      color: #5d6b78;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Customer Enquiry Response Analysis</h1>
+    <p>Python · Pandas · Matplotlib · Customer Service Analytics</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>Project Overview</h2>
+      <p>This project analyzes a fictional dataset of 30 customer enquiries to explore response times, enquiry categories, resolution outcomes, and customer ratings. The goal is to identify service bottlenecks and suggest practical improvements.</p>
+      <p><strong>Tools:</strong> Python, Pandas, Matplotlib and Google Colab.</p>
+      <p><strong>Data note:</strong> The dataset is fictional and used for portfolio demonstration only.</p>
+    </section>
+
+    <section>
+      <h2>Key Findings</h2>
+      <div class="kpis">
+        <div class="kpi"><strong>30</strong>Enquiries analyzed</div>
+        <div class="kpi"><strong>24.17 min</strong>Average response time</div>
+        <div class="kpi"><strong>80%</strong>Resolution rate</div>
+        <div class="kpi"><strong>4.21/5</strong>Average rating for resolved cases</div>
+      </div>
+      <ul>
+        <li><strong>Chat was fastest:</strong> average response time of 10.6 minutes.</li>
+        <li><strong>Email was slowest:</strong> average response time of 40.3 minutes.</li>
+        <li><strong>Booking enquiries:</strong> had the longest average initial response time at approximately 30.3 minutes.</li>
+        <li><strong>Technical enquiries:</strong> had the longest average resolution time at 1.75 hours.</li>
+        <li>Longer response times tended to be associated with lower customer ratings. This is an association, not proof of causation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Visualizations</h2>
+      <h3>1. Average Response Time by Channel</h3>
+      <p>Email enquiries took longer to receive an initial response than chat or phone enquiries.</p>
+      <img class="chart" src="customer-enquiry-response-analysis/response-time-by-channel.png" alt="Average response time by channel chart">
+
+      <h3>2. Average Response Time by Category</h3>
+      <p>Booking enquiries had the longest average initial response time among the categories analyzed.</p>
+      <img class="chart" src="customer-enquiry-response-analysis/response-time-by-category.png" alt="Average response time by enquiry category chart">
+
+      <h3>3. Response Time vs Customer Rating</h3>
+      <p>The chart explores the relationship between the time taken to respond and the rating provided by customers.</p>
+      <img class="chart" src="customer-enquiry-response-analysis/response-time-vs-rating.png" alt="Scatter plot of response time versus customer rating">
+    </section>
+
+    <section>
+      <h2>Recommendations</h2>
+      <ul>
+        <li>Review email workflows and response-time targets.</li>
+        <li>Improve booking enquiry routing and prioritization.</li>
+        <li>Provide technical support staff with troubleshooting guides and clear escalation procedures.</li>
+        <li>Monitor pending enquiries, response times and customer feedback regularly.</li>
+      </ul>
+    </section>
+
+    <section class="links">
+      <h2>Project Files</h2>
+      <a href="customer-enquiry-response-analysis/Customer_Enquiry_Response_Analysis.ipynb">View Python Notebook</a>
+      <a href="customer-enquiry-response-analysis/Customer_Enquiry_Response_Analysis_Report.docx">Download Analysis Report</a>
+      <a href="customer-enquiry-response-analysis/">View Files on GitHub</a>
+    </section>
+
+    <p><a href="index.html">← Back to Portfolio Homepage</a></p>
+  </main>
+
+  <footer>Commey Enoch Tettey · Data Analytics Portfolio</footer>
+</body>
+</html>
